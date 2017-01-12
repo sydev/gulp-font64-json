@@ -1,0 +1,36 @@
+{
+  "name": "gulp-font64-json",
+  "version": "1.0.0",
+  "description": "Convert your fonts to base64 and saves them in a json file to use the faster-font-loading-technique described <a href=\"http://crocodillon.com/blog/non-blocking-web-fonts-using-localstorage\">here</a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "keywords": [
+    "fonts",
+    "font",
+    "woff",
+    "woff2",
+    "ttf",
+    "otf",
+    "base64",
+    "gulp",
+    "plugin",
+    "json",
+    "faster",
+    "font",
+    "loading"
+  ],
+  "author": "Dominik Winter <dominik.winter92@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "3.0.8",
+    "mime": "1.3.4",
+    "through2": "2.0.3"
+  },
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "mocha": "3.2.0",
+    "should": "8.4.0"
+  }
+}
