@@ -32,7 +32,7 @@
         outputs.push(output);
 
         file.contents = new Buffer(JSON.stringify({css: outputs.join('\n')}));
-        file.path     = filepath;
+        file.path     = path.join(file.base, filepath);
 
         cb(null, file);
       }

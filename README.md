@@ -6,6 +6,7 @@ Convert your fonts to base64 and saves them in a json file to use the faster-fon
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
+- [Changelog](#changelog)
 
 ## Installation
 ```
@@ -33,3 +34,7 @@ gulp.task('build-fonts', () => {
 ```
 $ npm test
 ```
+
+## Changelog
+  - 1.0.1 Fix Bugs
+  - 1.0.0 Initial Release

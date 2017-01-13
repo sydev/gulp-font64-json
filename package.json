@@ -1,6 +1,6 @@
 {
   "name": "gulp-font64-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert your fonts to base64 and saves them in a json file to use the faster-font-loading-technique described here: http://crocodillon.com/blog/non-blocking-web-fonts-using-localstorage",
   "main": "index.js",
   "scripts": {
