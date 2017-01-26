@@ -11,6 +11,29 @@
 
     let outputs = [];
 
+    /**
+     * title-case a string
+     * @param  {String} str input string
+     * @return {String}     title-cased output string
+     */
+    function titleCase(str) {
+      let splitStr = str.toLowerCase().split(' '),
+        i = 0,
+        len = splitStr.length;
+
+      for (; i < len; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+      }
+
+      return splitStr.join(' ');
+    }
+
+    /**
+     * Convert the font file to a base64-string and merge with previous fonts
+     * @param  {Object}   file input file
+     * @param  {String}   enc  encoding of the file
+     * @param  {Function} cb   callback function
+     */
     function base64AndMerge(file, enc, cb) {
       if (file.isNull()) {
   			this.push(file);
@@ -26,8 +49,8 @@
         let file64  = file.contents.toString('base64'),
           mtype     = mime.lookup(file.path),
           ext       = path.extname(file.path),
-          filename  = path.basename(file.path, ext),
-          output    = `@font-face {font-family: ${filename}; src: url(data:${mtype};base64,${file64})}`;
+          fontname  = titleCase(path.basename(file.path, ext).replace(/(-|_)/g, ' ')),
+          output    = `@font-face {font-family: '${fontname}'; src: url(data:${mtype};base64,${file64})}`;
 
         outputs.push(output);
 

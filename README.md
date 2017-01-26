@@ -36,5 +36,8 @@ $ npm test
 ```
 
 ## Changelog
+  - 1.1.0
+    - Prettier font names in the font-face declaration
+    - Fix some bugs
   - 1.0.1 Fix Bugs
   - 1.0.0 Initial Release
