@@ -15,7 +15,7 @@ $ npm install --save-dev gulp-font64-json
 
 or if you prefer yarn:
 ```
-$ yarn add gulp-font64-json
+$ yarn add -D gulp-font64-json
 ```
 
 ## Usage
